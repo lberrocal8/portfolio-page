@@ -1,0 +1,168 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #17670A;
+    box-shadow: 0 2px 5px #3C423B;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#navbar ul li:hover {
+    background-color: #229B0E;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.section-title {
+    color: white;
+    font-size: 35px;
+}
+
+#description {
+    margin-top: -10px;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+
+#welcome-section,
+#projects,
+#profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects,
+#profile-section {
+    padding: 50px 10px;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#17670A, #369727, #5BC74A);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 50%);
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 12px #929292;
+    background-color: #17670A;
+}
+
+.link-project {
+    text-decoration: none;
+    color: white;
+}
+
+.item-prev {
+    margin: 5px 10px 5px 10px;
+    padding: 40px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #369727;
+}
+
+.item-container {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #17670A;
+}
+
+.h-item,
+.p-item {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.h-item {
+    margin: 2px;
+    text-align: left;
+}
+
+.p-item {
+    text-align: left;
+    font-style: italic;
+    font-size: 13px;
+}
+
+#profile-section {
+    background-image: linear-gradient(#5BC74A, #369727, #17670A);
+}
+
+.container-icon {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(5, 70px);
+}
+
+.icon {
+    text-align: center;
+    padding: 2px;
+    margin: 5px 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 100%);
+    }
+    .grid-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        column-gap: 0;
+    }
+    .grid-item {
+        width: 100%;
+    }
+}
